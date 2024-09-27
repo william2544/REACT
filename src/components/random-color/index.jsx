@@ -13,6 +13,7 @@ export default function RandomColor(){
         let b=generateColorUtility(256)
         const rgbcolor=`rgb(${r},${g},${b})`
         setcolor(rgbcolor)
+        console.log(rgbcolor);
     }
     function generateHEXColor(){
         const hex=[0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
@@ -27,12 +28,21 @@ export default function RandomColor(){
     return(
         <div style={{
             backgroundColor:color,
-            height:'100vh'
+            height:'100vh',
+            display:"flex",
+            flexDirection:"column",
+            gap:'20rem'
         }
         }>
-            <button onClick={()=>settypeOfColor('hex')}>Create HEX Color</button>
-            <button onClick={()=>settypeOfColor('rgb')}>Create RGB Color</button>
-            <button onClick={()=>typeOfColor === 'hex'?generateHEXColor():generateRGBColor()}>Generate Random Color</button>
+            <div>
+                <button onClick={()=>settypeOfColor('hex')}>Create HEX Color</button>
+                <button onClick={()=>settypeOfColor('rgb')}>Create RGB Color</button>
+                <button onClick={()=>typeOfColor === 'hex'?generateHEXColor():generateRGBColor()}>Generate Random Color</button>
+            </div>
+            <div>
+                <h2>{typeOfColor === 'rgb'?'RGB':'HEX'}</h2>
+                <p>{color}</p>
+            </div>
         </div>
     )
 }
