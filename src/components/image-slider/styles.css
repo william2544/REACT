@@ -1,0 +1,55 @@
+.container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.current-slide {
+    width: 100%;
+    height: auto;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.circle-indicator {
+    margin-top: 10px;
+}
+
+.circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.circle.active {
+    background-color: blue;
+}
+.hide-current-image{
+    display: none;
+}
+.update-circle-indicator{
+    display: none;
+}
+.circle-indicator .active{
+    background-color: white;
+}
