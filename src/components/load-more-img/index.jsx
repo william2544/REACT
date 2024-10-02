@@ -32,7 +32,7 @@ export default function LoadMoreData(){
     },[count])
 
     useEffect(()=>{
-        if(products && products.length > 60){
+        if(products && products.length === 60){
             setDisablebtn(true)
         }
     },[products])
@@ -53,7 +53,7 @@ export default function LoadMoreData(){
                     return <div className="product" key={product.id}>
                         <img src={product.images[0]} alt={product.title} />
                         <h5 className="product-title">{product.title}</h5>
-                        <p>{product.price}</p>
+                        <p>${product.price}</p>
                     </div>
                 }))
                 :null
@@ -64,7 +64,7 @@ export default function LoadMoreData(){
                 disabled={disabledbtn}
                 className={loading?'':'btn-loading'}
                 >{loading?'Loading more...':'Load more products'}</button>
-                <div>{disabledbtn?"Theproducts have reach maximum of 150":null}</div>
+                <div>{disabledbtn?"The products have reach maximum of 150":null}</div>
             </div>
         </div>
     )

@@ -67,6 +67,7 @@
     position: absolute;
     bottom: 5px;
     left: 50%;
+    margin-top: 1rem;
 }
 
 /* Responsive adjustments for smaller screens */

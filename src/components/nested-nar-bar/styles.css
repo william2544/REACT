@@ -1,0 +1,13 @@
+.tree-view-container{
+    min-height: 100vh;
+    width: 300px;
+    background-color: rgb(70, 70, 192);
+    border-radius: .2rem;
+    list-style: none;
+    color: white;
+}
+
+.menu-list-container{
+    list-style: none;
+    align-items: center;
+}
