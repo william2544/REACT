@@ -10,16 +10,22 @@ import LoadMoreData from './components/load-more-img/index.jsx'
 import TreeView from './components/nested-nar-bar/menu.jsx'
 import { navigation } from './components/nested-nar-bar/data.js'
 import QRCodGenerator from './components/qr-code/index.jsx'
+import LightDarkMode from './components/light-dark-mode/index.jsx'
+import ScrollIndicator from './components/scrole-percentage/index.jsx'
+import TabsTest from './components/custom-tabs/prnt-tab.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <Accordian/> */}
     {/* <RandomColor/> */}
-    <StarRating noOfStars={10}/>
+    {/* <StarRating noOfStars={10}/> */}
     {/* <ImageSlider url={'https://picsum.photos/v2/list'} limit={'10'}/> */}
     {/* <LoadMoreData/> */}
     {/* {<TreeView menu={navigation}/>} */}
-    <QRCodGenerator/>
+    {/* <QRCodGenerator/> */}
+    {/* <LightDarkMode/> */}
+    {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> */}
+    <TabsTest/>
   </StrictMode>,
 )
