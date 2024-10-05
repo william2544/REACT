@@ -1,8 +1,42 @@
 .container{
     background-color: grey;
+    animation-name: animateModel;
+    animation-duration: 2s;
+    top: 5px;
 }
 .header{
     position: relative;
     background-color:azure;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-model-icon{
+    position: absolute;
+    right: 5px;
+    font-size: 35px;
+    cursor: pointer;
+    font-weight: 800;
+}
+.body{
+    min-height: 4rem;
+    background-color: #8ca9c2;
+    width: 100%;
+    font-size: 25px;
+}
+.footer{
+    background-color:azure;
+    width: 100%;
+}
+
+@keyframes animateModel{
+    from{
+        opacity: 0;
+        top: -50px;
+    }
+    to{
+        opacity: 1;
+        top: 5px;
+    }
 }

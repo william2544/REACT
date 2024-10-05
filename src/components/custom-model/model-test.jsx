@@ -8,11 +8,14 @@ export default function ModelTest(){
     function hundleToggle(){
         setCurrentDiv(!currentDiv)
     }
+    function onClose(){
+        setCurrentDiv(false)
+    }
     return(
         <div className="body-container">
-            <button onClick={hundleToggle}>Display the model</button>
+            <button onClick={hundleToggle} style={{cursor:"pointer"}}> Display the model</button>
             {
-                currentDiv?<Model/>:null
+                currentDiv?<Model onClose={onClose} footer={<p>Still no content yet</p>} />: null
             }
         </div>
     )
