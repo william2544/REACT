@@ -1,0 +1,8 @@
+.container{
+    background-color: grey;
+}
+.header{
+    position: relative;
+    background-color:azure;
+    width: 100%;
+}

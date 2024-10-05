@@ -1,0 +1,32 @@
+.wrapper{
+    background-color: rgb(209, 223, 255);
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tabs-container{
+    min-width: 4rem;
+    background-color: rgb(138, 211, 211);
+    margin-left: 5px;
+    border-radius: 10%;
+    padding: 10px;
+    cursor: pointer;
+}
+.tabs-container:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.lable{
+    font-size: 25px;
+}
+.content > h3{
+    font-size: 25px;
+}

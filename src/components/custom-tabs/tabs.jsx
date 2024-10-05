@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-
+import './tabs.css'
 
 export default function Tabs({tabContent,onChange}) {
     
@@ -17,7 +17,7 @@ export default function Tabs({tabContent,onChange}) {
                 {
                     tabContent && tabContent.length > 0?
                         tabContent.map((tabItem,index)=>{
-                            return <div onClick={()=>handleOnclick(index)} key={tabItem.label}>
+                            return <div onClick={()=>handleOnclick(index)} key={tabItem.label} className="tabs-container">
                                 <span className="lable">{tabItem.label}</span>
                             </div>
                         })
@@ -25,9 +25,7 @@ export default function Tabs({tabContent,onChange}) {
                 }
             </div>
             <div className="content">
-                {
-                    tabContent[currentTabState] && tabContent[currentTabState].content
-                }
+                <h3>{tabContent[currentTabState] && tabContent[currentTabState].content}</h3>
             </div>
         </div>
     )
