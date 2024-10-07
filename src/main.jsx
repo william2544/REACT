@@ -15,6 +15,7 @@ import ScrollIndicator from './components/scrole-percentage/index.jsx'
 import TabsTest from './components/custom-tabs/prnt-tab.jsx'
 import ModelTest from './components/custom-model/model-test.jsx'
 import GitHubProfile from './components/GitHub-profile-search/index.jsx'
+import SearchAutoComplete from './components/search-autocomplete/index.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -30,6 +31,7 @@ createRoot(document.getElementById('root')).render(
     {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> */}
     {/* <TabsTest/> */}
     {/* <ModelTest/> */}
-    <GitHubProfile/>
+    {/* <GitHubProfile/> */}
+    <SearchAutoComplete/>
   </StrictMode>,
 )
