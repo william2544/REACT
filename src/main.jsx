@@ -16,6 +16,7 @@ import TabsTest from './components/custom-tabs/prnt-tab.jsx'
 import ModelTest from './components/custom-model/model-test.jsx'
 import GitHubProfile from './components/GitHub-profile-search/index.jsx'
 import SearchAutoComplete from './components/search-autocomplete/index.jsx'
+import TicTacToe from './components/tiktaktoe/index.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -33,5 +34,6 @@ createRoot(document.getElementById('root')).render(
     {/* <ModelTest/> */}
     {/* <GitHubProfile/> */}
     <SearchAutoComplete/>
+    <TicTacToe/>
   </StrictMode>,
 )
