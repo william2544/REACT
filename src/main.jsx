@@ -16,8 +16,9 @@ import TabsTest from './components/custom-tabs/prnt-tab.jsx'
 import ModelTest from './components/custom-model/model-test.jsx'
 import GitHubProfile from './components/GitHub-profile-search/index.jsx'
 import SearchAutoComplete from './components/search-autocomplete/index.jsx'
-import TicTacToe from './components/tiktaktoe/index.jsx'
-
+import TicTacToe from './components/tictactoe/index.jsx'
+import UseFetchHookTest from './components/use-fetch/test.jsx'
+import UseClickOutsideTest from './components/useOutSide-Click/test.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
@@ -33,7 +34,9 @@ createRoot(document.getElementById('root')).render(
     {/* <TabsTest/> */}
     {/* <ModelTest/> */}
     {/* <GitHubProfile/> */}
-    <SearchAutoComplete/>
-    <TicTacToe/>
+    {/* <SearchAutoComplete/>
+    <TicTacToe/> */}
+    {/* <UseFetchHookTest/> */}
+    <UseClickOutsideTest/>
   </StrictMode>,
 )
